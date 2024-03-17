@@ -51,8 +51,10 @@ const App = () => {
   return (
     <div className="container mt-6 text-center ">
       <h1 className="text-center">Nuestros Colaboradores</h1>
+      <hr />
       <div className="row mt-4">
         <div className="col-md-4 mx-auto">
+          <h2 className="text-center">Agregar colaboradores</h2>
           <Formulario agregarColaborador={agregarColaborador} />
           {mensajeAlerta && <Alert mensaje={mensajeAlerta} tipo={tipoAlerta} />}
         </div>
@@ -63,7 +65,7 @@ const App = () => {
         </div>
       </div>
       <div className="row mt-4">
-        <div className="col-md-12 mx-auto">
+        <div className="col-md-9 mx-auto">
           <Listado colaboradores={filtrarColaboradores()} eliminarColaborador={eliminarColaborador} />
         </div>
       </div>

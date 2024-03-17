@@ -6,13 +6,15 @@ const Buscador = ({ setBusqueda }) => {
   };
 
   return (
-    <input
-      type="text"
-      className="form-control"
-      style={{ textAlign: 'center' }}
-      placeholder="Buscar colaborador"
-      onChange={handleChange}
-    />
+        <div className="mb-6 mx-auto col-md-6">
+        <input
+            type="text"
+            className="form-control"
+            style={{ textAlign: 'center' }}
+            placeholder="Buscar colaborador"
+            onChange={handleChange}
+        />
+        </div>
   );
 };
 
